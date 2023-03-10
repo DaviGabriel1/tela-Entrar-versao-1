@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+}
+.login-principal{
+    width: 100vw; /*representa a porcentagem de pixels q o widht usara, nesse caso é 100% ou 100vw*/
+    height: 100vh;/*representa a porcentagem de pixels q o height usara, nesse caso é 100% ou 100vh*/
+    background: #201b2c;
+    display: flex;/*deixa os items lado a lado*/
+    justify-content: center; /*alinha o eixo x */
+    align-items: center; /*alinha o eixo y */
+}
+.login-esquerdo{
+    width: 50vw; /*50% da largura da tela*/
+    height: 100vh; /* 100% da altura*/
+    display: flex;/*deixa os items lado a lado*/
+    justify-content: center; /*alinha o eixo x */
+    align-items: center; /*alinha o eixo y */
+    flex-direction: column; /*para por elementos um embaixo do outro mesmo com display flex*/
+}
+.login-esquerdo > h1{/*forma alternativa de chamar tags sem classe, porem n deve ter mais de uma tag igual no html */
+color: aqua;
+}
+.login-direito{
+    width: 50vw; /*50% da largura da tela*/
+    height: 100vh; /* 100% da altura*/
+    display: flex;/*deixa os items lado a lado*/
+    justify-content: center; /*alinha o eixo x */
+    align-items: center; /*alinha o eixo y */ 
+    /*não precisa de flex direction pois só vai ter nada embaixo ou em cima do cartao login (filho do login-direito)*/
+}
+.cartao-login{ /* filho do login-direito*/
+width: 60%; /*não usa-se vw pois tal e mudado de acordo cm o tamanho da tela, já o 60%, é 60% dos 50vw do login-direito (pai do cartao-login)*/
+display: flex;/*deixa os items lado a lado*/
+justify-content: center; /*alinha o eixo x */
+align-items: center; /*alinha o eixo y */
+flex-direction: column; /*para por elementos um embaixo do outro mesmo com display flex*/
+padding: 30px 35px; /*padding e a borda interna do cartao login, o primeiro valor é as bordas do eixo y (cima e baixo), o segundo valor é para o eixo x (esquerda e direita)*/
+background: #2f2841;
+border-radius: 20px; /*arredonda as bordas*/
+box-shadow: 0px 10px 40px #00000056; /*adiciona sombra ao item, valor 1: qts px vai deslocar em x,valor 2: qts px vai deslocar em y (negativo vai para cima), valor 3: blurn da sombra, valor 4: cor*/
+}
